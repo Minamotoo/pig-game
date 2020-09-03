@@ -13,30 +13,49 @@
     </head>
 
     <body>
-        <div class="wrapper clearfix">
-            <div class="player-0-panel active">
-                <div class="player-name" id="name-0">Player 1</div>
-                <div class="player-score" id="score-0">43</div>
-                <div class="player-current-box">
-                    <div class="player-current-label">Current</div>
-                    <div class="player-current-score" id="current-0">11</div>
-                </div>
+        <main>
+            <div class="description-panel">
+                <h2>Game Rules | Read carefully!</h2>
+                <p>1. Game start at the Player 1</p>
+                <p>2. Press "ROLL DICE" to roll</p>
+                <p>3. Each time player rolls, the round score appears at the
+                    "CURRENT" part and it will added every times player get
+                    scores</p>
+                <p>4. Press "HOLD" to earn player"s round scores, if pressed it
+                    will change the turn</p>
+                <p>5. When player roll dice to 1 point, it will change the turn
+                    automatically, means that player lose that round</p>
+                <p>6. From rule number 5, if player did not press "HOLD" or get
+                    1
+                    score, the turn change and will get nothing that round</p>
+                <p>7. Game ended when 1 of players reach 100 points</p>
             </div>
-
-            <div class="player-1-panel">
-                <div class="player-name" id="name-1">Player 2</div>
-                <div class="player-score" id="score-1">72</div>
-                <div class="player-current-box">
-                    <div class="player-current-label">Current</div>
-                    <div class="player-current-score" id="current-1">0</div>
+            <div class="wrapper clearfix">
+                <div class="player-0-panel active">
+                    <div class="player-name" id="name-0">Player 1</div>
+                    <div class="player-score" id="score-0">43</div>
+                    <div class="player-current-box">
+                        <div class="player-current-label">Current</div>
+                        <div class="player-current-score" id="current-0">11</div>
+                    </div>
                 </div>
-            </div>
 
-            <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
-            <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
-            <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
-            <img src="dice-5.png" alt="Dice" class="dice">
-        </div>
+                <div class="player-1-panel">
+                    <div class="player-name" id="name-1">Player 2</div>
+                    <div class="player-score" id="score-1">72</div>
+                    <div class="player-current-box">
+                        <div class="player-current-label">Current</div>
+                        <div class="player-current-score" id="current-1">0</div>
+                    </div>
+                </div>
+
+                <button class="btn-new"><i class="ion-ios-plus-outline"></i>New
+                    game</button>
+                <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+                <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+                <img src="dice-5.png" alt="Dice" class="dice">
+            </div>
+        </main>
 
         <script src="script.js"></script>
     </body>
