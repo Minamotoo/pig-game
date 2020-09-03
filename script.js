@@ -42,7 +42,7 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
     document.getElementById('score-' + nowPlayer).textContent =
       scores[nowPlayer]
 
-    if (scores[nowPlayer] >= 100) {
+    if (scores[nowPlayer] >= 50) {
       document.getElementById('name-' + nowPlayer).textContent = 'WINNER!'
       document.querySelector('.dice').style.display = 'none'
       document
